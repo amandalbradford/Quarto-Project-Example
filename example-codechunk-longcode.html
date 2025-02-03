@@ -84,6 +84,25 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -151,19 +170,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
 <div class="cell">
+
+</div>
+<div class="cell">
 <div class="cell-output-display">
 <div id="fig-condition" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="example-codechunk-longcode_files/figure-html/fig-condition-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Mean heartrate vs measurement in control and stress conditions</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: dynamic_1</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p>This is a reference to <a href="#fig-condition">Figure&nbsp;1</a></p>
+<p>This is a reference to (<a href="#fig-condition">Figure&nbsp;1</a>)</p>
+<p>This is an example of a citation in quarto <span class="citation" data-cites="kirschbaum2007 nitsch2020">(<a href="#ref-kirschbaum2007" role="doc-biblioref">Kirschbaum and Hellhammer 2007</a>; <a href="#ref-nitsch2020" role="doc-biblioref">Nitsch and Kalenscher 2020</a>)</span></p>
+<p><span class="citation" data-cites="nitsch2020">(<a href="#ref-nitsch2020" role="doc-biblioref">Nitsch and Kalenscher 2020</a>)</span></p>
+<p>This is an in-text citation from <span class="citation" data-cites="kirschbaum2007">Kirschbaum and Hellhammer (<a href="#ref-kirschbaum2007" role="doc-biblioref">2007</a>)</span></p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-kirschbaum2007" class="csl-entry" role="doc-biblioentry">
+Kirschbaum, C., and D. H. Hellhammer. 2007. <a href="https://doi.org/10.1016/b978-012373947-6.00334-2">Salivary Cortisol</a>. Pages 405–409. Elsevier.
+</div>
+<div id="ref-nitsch2020" class="csl-entry" role="doc-biblioentry">
+Nitsch, F. J., and T. Kalenscher. 2020, February 18. <a href="http://dx.doi.org/10.31234/osf.io/etyhx">Keeping a cool head at all times. What determines choice consistency?</a>
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

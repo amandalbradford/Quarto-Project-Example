@@ -2,6 +2,8 @@
 title: "More code chunk fun"
 author: "Amanda Bradford"
 format: html
+bibliography: references.bib
+csl: american-fisheries-society.csl
 ---
 
 ## Quarto
@@ -26,10 +28,18 @@ You can add options to executable code like this
 The `echo: false` option disables the printing of code (only output is displayed).
 
 ```{r}
+#| echo: false
+#| label: dynamic-caption
+
+cap <- 'dynamic_1'
+
+```
+
+```{r}
 #| message: false
 #| warning: false
 #| label: fig-condition
-#| fig-cap: 'Mean heartrate vs measurement in control and stress conditions'
+#| fig-cap: !expr cap
 #| echo: false
 library(tidyverse)
 library(BayesFactor)
@@ -84,4 +94,10 @@ plot
 # ggsave("../output/heartrate.pdf", plot, width = 4, height = 3)
 ```
 
-This is a reference to @fig-condition
+This is a reference to (@fig-condition)
+
+This is an example of a citation in quarto [@kirschbaum2007; @nitsch2020]
+
+[@nitsch2020]
+
+This is an in-text citation from @kirschbaum2007
